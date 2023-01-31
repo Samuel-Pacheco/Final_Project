@@ -1,0 +1,178 @@
+
+.info {
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: whitesmoke;
+}
+
+.axisWhite text {
+    fill: white;
+}
+
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
+
+#sources {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.credits {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.sources_list {
+    list-style-type: none;
+    padding: 0px !important;
+    font-size: 1.1em;
+    color: white;
+}
+
+.sources_header {
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    background: url("https://mw1.google.com/mw-planetary/sky/skytiles_v1/73_28_7.jpg") fixed;
+    color: white;
+}
+
+.left, .right {
+    color: white;
+}
+
+.range-slider {
+    height: 5px;
+    position: relative;
+    background-color: #e1e9f6;
+    border-radius: 2px;
+}
+.range-selected {
+    height: 100%;
+    left: 32%;
+    right: 39%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #1b53c0;
+}
+
+.range-input {
+    position: relative;
+}
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -7px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.range-input input::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #1b53c0;
+    background-color: #fff;
+    pointer-events: auto;
+    -webkit-appearance: none;
+}
+.range-input input::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid #1b53c0;
+    background-color: #fff;
+    pointer-events: auto;
+    -moz-appearance: none;
+}
+
+.range-year {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.range-year label {
+    margin-right: 5px;
+    color: white;
+}
+
+.range-year input {
+    width: 'fit-content';
+    padding: 5px;
+    cursor: default;
+}
+
+.range-year input:first-of-type {
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*https://bl.ocks.org/micahstubbs/c7f17dcbdc728e0d579d84e47c33dfa6*/
+  .names {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+  }
+  
+
+  .d3-tip {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:"avenir next", Arial, sans-serif;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFA500;
+    border-radius: 1px;
+    pointer-events: none;
+  }
+
+
+  .d3-tip:after {      
+    box-sizing: border-box;
+    display: inline;
+    font-size: 8px;
+    width: 100%;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    pointer-events: none;
+    
+  }
+
+  /* Northward tooltips */
+  .d3-tip.n:after {
+    content: "\25BC";
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+
+  .details{
+    color: white;
+  }

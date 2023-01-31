@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+   
+    <meta charset="utf-8">
+    <title>Meteorite Landings</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="globe.css">
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">   
+    <script type= "text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script type= "text/javascript" src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://media.istockphoto.com/id/1073058750/photo/a-comet-an-asteroid-a-meteorite-falls-to-the-ground-against-a-starry-sky-attack-of-the.jpg?s=612x612&w=0&k=20&c=IjnbA6X8-52clXsA89-PFXNwXY7iwbQWuJC5hmMSu0Q=');
+        background-size: cover; background-position: center; color: rgb(16, 0, 161)">
+      <h1 class="white-text">Light up the Sky with Meteorit Impacts</h1>
+      <p class="white-text">Use the interactive Globe below to explore Meteorit and there data set</p>
+    </div>
+  </div>
+    
+      <div class="row">
+    <div class="col-md-12 text-center white-text" style="background-image: url('https://media0.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif');
+        background-size: cover; background-position: center; color: white">
+      <h2 class="white-text">Project Overview</h2>
+      <p class="aliceblue-text">This final project with data provided by the Nasa public data center shows the Meteorit that have fallen and landed on earth.</p>
+    </div>
+    
+  </div>
+      <h1 style="text-align:center; color:white"><bold>Meteorite Landings</bold></h1>
+      <p class="info" style="color:white">This visualization is to analyze the meteorite and there landing from the past 220 pluss years,
+        to try and identify patterns in their occurrences. Meteorites are solid pieces of debris from objects that originate in outer
+        space and have passed through our atmosphere. This visualization helps display the meteorite landings
+        over time. <br><br>Note: Only recordered meteorite landings are shown based on the Nasa public data base. Meteorite landing clusters that landed at the same location and at the same time have been filtered to appear as a single landing for accuracy and visibility. </p> <br>
+        <svg id="Legend"></svg>
+        <svg id="Globe"></svg>
+      <br>
+
+      <!-- Visualization -->
+      <script src="d3-tip.js"></script>
+      <script type="text/javascript" src="globe.js"></script>
+        
+      <!-- Slider -->
+      <div class="range">
+        <h2 style="color: white;">Year Interval Selector</h2>
+        <div class="range-slider">
+          <span class="range-selected"></span>
+        </div>
+        <div class="range-input">
+          <input type="range" class="min" min="1801" max="2020" value="1870" step="1">
+          <input type="range" class="max" min="1801" max="2020" value="1930" step="1">
+        </div>
+        <div class="range-year">      
+          <label for="min">Min</label>
+          <input type="number" name="min" value="1870" max="2020" readonly>      
+          <label for="max">Max</label>
+          <input type="number" name="max" value="1930" max="2020" readonly>      
+        </div>
+      </div>  
+       </div>
+        </div>
+      </div>
+    </div>
+    <script src="slider.js"></script>
+  </body>
+</html>
